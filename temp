@@ -1,0 +1,11 @@
+import os
+
+
+path = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(path, 'models/yolov5s.yaml')
+
+with open(file_path, 'r') as f:
+    file_data = f.readlines()
+
+    for line in file_data:
+        print (line)
